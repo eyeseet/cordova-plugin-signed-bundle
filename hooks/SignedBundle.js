@@ -45,12 +45,14 @@ module.exports = function(context) {
 			var keystore = undefined;	
 			result.widget.platform.forEach(function(platform) {
 				if(platform.$.name == 'android') {
-					platform.preference.forEach(function(pref) {
-						if(pref.$.name == 'signed_bundle_keystore_path')
-							keystore = pref.$.value;
-						if(pref.$.name =='signed_bundle_keystore_alias')
-							alias = pref.$.value;
-					});
+					if(platform.preference) {
+						platform.preference.forEach(function(pref) {
+							if(pref.$.name == 'signed_bundle_keystore_path')
+								keystore = pref.$.value;
+							if(pref.$.name =='signed_bundle_keystore_alias')
+								alias = pref.$.value;
+						});
+					}
 				}
 			});
 			
