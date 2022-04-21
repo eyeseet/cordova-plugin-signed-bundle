@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-signed-bundle",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Cordova plugin for creating signed Android bundles on release build",
   "repository": {
     "type": "git",
