@@ -28,7 +28,7 @@ For example:
 ```
 <platform name="android">
     <preference name="signed_bundle_keystore_path" value="../android.keystore" />
-    <preference name="signed_bundle_keystore_alias" value="nl.eyeseet.alias" />
+    <preference name="signed_bundle_keystore_alias" value="nl.cnc.alias" />
 </platform>
 ```
 
@@ -39,3 +39,5 @@ If you do not have a keystore and/or alias move to the directory you wish to sav
 keytool -genkey -v -keystore <filename>.keystore -alias <app_alias> -keyalg RSA -keysize 2048 -validity 10000
 ```
 Now use the `path of the keystore file` and `<app_alias>` to configure the config.xml file.
+
+[Created by Content And Creations](https://contentandcreations.nl)
